@@ -228,7 +228,7 @@ fn configure_tcp(workers: usize, tcp: &net2::TcpBuilder) -> io::Result<()> {
     Ok(())
 }
 
-#[cfg(windows)]
+#[cfg(any(windows, target_os = "redox"))]
 fn configure_tcp(_workers: usize, _tcp: &net2::TcpBuilder) -> io::Result<()> {
     Ok(())
 }

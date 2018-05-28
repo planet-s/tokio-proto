@@ -24,15 +24,15 @@ exclude       = [
 [dependencies]
 futures = "0.1.14"
 log = "0.3.6"
-net2 = "0.2"
+net2 = { git = "https://github.com/redox-os/net2-rs" }
 smallvec = "0.4.0"
-tokio-core = "0.1.8"
+tokio-core = { git = "https://github.com/redox-os/tokio-core" }
 tokio-service = "0.1"
-tokio-io = "0.1"
+tokio-io = { git = "https://github.com/redox-os/tokio" }
 
 [dev-dependencies]
 bytes = "0.4"
 env_logger = "0.3.0"
 lazycell = "0.4.0"
-mio = "0.6"
+mio = { git = "https://github.com/redox-os/mio" }
 rand = "0.3.14"
